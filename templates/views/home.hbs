@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>Training center</title>
+        <link rel="stylesheet" href="external.css" />
+        <script type="text/javascript">
+            var ccount=0;
+            var courses = new Array();
+            function f(){
+                var url = window.location.search;
+                var checkstr = url.substring(1);
+                var splitarray = checkstr.split('&');
+                if(splitarray[0].indexOf('=')[1]=='lakshman' && splitarray[1].split('=')[1]=='password'){
+                    window.alert("Dear user, welcome to the home page");
+                }
+                else{
+                    window.alert('Login first');
+                    window.location.href="login.html";
+                }
+            }
+            function enrolled(course) {
+                var content='';
+                courses[ccount++] = course;
+                for(i=0;i<courses.length;i++){
+                    content += courses[i]+'\n';
+                }
+                window.alert('Congratulations\n'+'You are successfully enrolled to the following courses:\n\n'+content);    
+            }
+        </script>
+    </head>
+    <body >
+        <div class="topheader" >
+            <div id="th1" style="float:left">lakshmanautomation@gmail.com</div>
+            <div id="th2" style=" float:right;">Instagram_Id : sailakshman120</div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="https://logos-world.net/wp-content/uploads/2021/10/Pornhub-Symbol.png">
+            </div>
+            <div class="author" >
+                <span style="font-size:40px; padding-left:10px; padding-top:25px; color:green;">Telugu Celebrity Details</span>
+            </div>
+            <div class="login" >
+                <a name="login" href="index.html">Logout</a>
+            </div>
+        </div>
+        <div class="menu">
+            <div>
+                <a class="home" href="index.html">Home</a>
+            </div>
+            <div>
+                <a class="about" href="about.html">About</a>
+            </div>
+            <div>
+                <a class="courses" href="courses.html">Courses</a>
+            </div>
+            <div>
+                <a class="milestones" href="milestones.html">Success Milestones</a>
+            </div>
+        </div>
+        <div class="body">
+            <h1 class="SectionTitle" >Courses Available</h1>
+            <div class="row">
+                <div class="cell">
+                    <a href="https://en.wikipedia.org/wiki/Katrina_Kaif" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Katrina_Kaif_promoting_Bharat_in_2019.jpg/330px-Katrina_Kaif_promoting_Bharat_in_2019.jpg">
+                    </a>
+                    <button onclick="enrolled('Katrina Kaif')"> Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="https://en.wikipedia.org/wiki/Sunny_Leone" target="_blank">
+                        <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQx2l-zi04d_dLI9jXKrX2H_mWLwY_IA9J_Rprqc_IoZUyuUo-8CHzLZUXTfcP3Bpbenf04EJ8SpY3elbY"/>
+                    </a>
+                    <button onclick="enrolled('Sunny Leone')">Sunny Leone</button>
+                </div>
+                <div class="cell">
+                    <a href="https://en.wikipedia.org/wiki/Sunny_Leone" target="_blank">
+                    <img src="https://images.news18.com/ibnlive/uploads/2012/04/sep8kajal_agarwal.jpg?im=FitAndFill,width=1200,height=675">
+                    </a>
+                    <button onclick="enrolled('Kajal')">Kajal</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2022/11/Dani-Deniels-Wiki.jpg">
+                    </a>
+                    <button onclick="enrolled('Dani Daniels')">Dani Daniels</button>
+                </div>
+            </div>
+           
+            <div class="row">
+                <div class="cell">
+                    <a href="https://en.wikipedia.org/wiki/Katrina_Kaif" target="_blank">
+                        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2022/07/Pooja-Hegde.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://yt3.googleusercontent.com/7eeiv-nSirEYbeBCdApZQq3NV__b4Rj7YexJFiWtb2rAnqsab88nS6NC6vDTxdqIcBZdSIzL=s900-c-k-c0x00ffffff-no-rj">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell"> 
+                    <a href="#">
+                        <img src="https://images.news18.com/ibnlive/uploads/2012/04/sep8kajal_agarwal.jpg?im=FitAndFill,width=1200,height=675">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2022/11/Dani-Deniels-Wiki.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"> 
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Katrina_Kaif_promoting_Bharat_in_2019.jpg/330px-Katrina_Kaif_promoting_Bharat_in_2019.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://yt3.googleusercontent.com/7eeiv-nSirEYbeBCdApZQq3NV__b4Rj7YexJFiWtb2rAnqsab88nS6NC6vDTxdqIcBZdSIzL=s900-c-k-c0x00ffffff-no-rj">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell"> 
+                    <a href="#">
+                        <img src="https://images.news18.com/ibnlive/uploads/2012/04/sep8kajal_agarwal.jpg?im=FitAndFill,width=1200,height=675">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2022/11/Dani-Deniels-Wiki.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"> 
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Katrina_Kaif_promoting_Bharat_in_2019.jpg/330px-Katrina_Kaif_promoting_Bharat_in_2019.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://yt3.googleusercontent.com/7eeiv-nSirEYbeBCdApZQq3NV__b4Rj7YexJFiWtb2rAnqsab88nS6NC6vDTxdqIcBZdSIzL=s900-c-k-c0x00ffffff-no-rj">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell"> 
+                    <a href="#">
+                        <img src="https://images.news18.com/ibnlive/uploads/2012/04/sep8kajal_agarwal.jpg?im=FitAndFill,width=1200,height=675">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+                <div class="cell">
+                    <a href="#">
+                        <img src="https://karnatakastateopenuniversity.in/wp-content/uploads/2022/11/Dani-Deniels-Wiki.jpg">
+                    </a>
+                    <button onclick="enrolled()">Katrina Kaif</button>
+                </div>
+            </div>
+        </div> 
+
+        <br/>
+        <hr/>
+        <br/>
+        {{>successmilestones}}
+        <br/>
+        <hr/>
+        <br/>
+        {{>about}}
+        <br/><br/>
+        {{>footer}}
+    </body>
+</html>

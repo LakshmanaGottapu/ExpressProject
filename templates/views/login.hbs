@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" href="external.css" />
+        <script type="text/javascript">
+            function check(){
+                var username = document.getElementById("uname").value;
+                var password = document.getElementById("pwd").value;
+
+                if(username=='lakshman' && password=="password"){
+                    document.getElementById('form1').action='home.html';
+                }
+                else{
+                    document.getElementById("err").innerHTML="Username or Password is incorrect!";
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        {{>topheader}}
+        {{>header}}
+        {{>menu}}
+        <div class="Login" height="auto" style="margin-top:8%; margin-left:30%; margin-right:30%; border:1px solid green; height:90%;">
+            <h1 class="SectionTitle" >Login Form</h1><br><br><br>
+            <form id="form1" name="form1" onsubmit="return check()">
+                <b style="margin-left:25%;">Username</b> 
+                <input type="text" id="uname" value=""><br/><br/><br/><br/>
+                <b style="margin-left:25%">Password</b>
+                <input type="password" id="pwd" value=""><br/><br/><br/><br/>
+                <input id="submit" style="margin-left:45%" type="submit" value="LOGIN">
+            </form>
+            <div id="err" ></div>
+        </div>
+        <br/><br/>
+        {{>footer}}
+    </body>
+</html>
