@@ -19,8 +19,8 @@ hbs.registerPartials(partialPath);
 //set the route for template engine
 
 app.get("/",(req,res)=>{
-    console.log("request is made.");
-    console.log("sending the response.......");
+    // console.log("request is made.");
+    // console.log("sending the response.......");
     res.render("index");
 });
 
@@ -51,10 +51,10 @@ app.get("/login",(req,res)=>{
 app.get("/milestones",(req,res)=>{
     res.render("successpage");
 });
-app.get('/external.css', (req, res)=> {
-    res.type('text/css');
-    res.sendFile(__dirname+'/external.css');
-});
+// app.get('/style.css', (req, res)=> {
+//     res.type('text/css');
+//     res.sendFile(__dirname+'/style.css');
+// });
 
 // server.get("/", (req,res)=>{
 //     const content= `
