@@ -51,10 +51,10 @@ app.get("/login",(req,res)=>{
 app.get("/milestones",(req,res)=>{
     res.render("successpage");
 });
-// app.get('/style.css', (req, res)=> {
-//     res.type('text/css');
-//     res.sendFile(__dirname+'/style.css');
-// });
+app.get('/css/style.css', (req, res)=> {
+    res.type('text/css');
+    res.sendFile(__dirname+'../public/css/style.css');
+});
 
 // server.get("/", (req,res)=>{
 //     const content= `
