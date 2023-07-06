@@ -44,7 +44,7 @@ app.get('/style.css', (req, res)=> {
 });
 app.get("/*",(req,res)=>{
     res.render("404",{
-        errorComment: "Oops the page you requested is not found in about page"
+        errorComment: "Oops the page you requested is not foundcls"
     });
 });
 // server.get("/", (req,res)=>{
